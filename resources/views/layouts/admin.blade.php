@@ -37,7 +37,10 @@
          </div>
          <div id="layoutSidenav_content">
             <main>
-               <div class="container-fluid">
+               <div class="container-fluid pt-4">
+
+                  @include('partials.flash-messages')
+
                   @yield('content')
                </div>
             </main>

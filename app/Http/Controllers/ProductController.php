@@ -37,6 +37,8 @@ class ProductController extends Controller
 
         Product::create($data);
 
+        session()->flash('success','Product created successfully');
+
         return back();
     }
 
@@ -73,6 +75,8 @@ class ProductController extends Controller
 
         $product->update($data);
 
+        session()->flash('success','Product updated successfully');
+
         return back();
     }
 
@@ -87,6 +91,8 @@ class ProductController extends Controller
 
         $product->deleteImage();
         $product->delete();
+
+        session()->flash('success','Product deleted successfully');
 
         return back();
     }

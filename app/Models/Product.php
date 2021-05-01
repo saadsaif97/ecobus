@@ -13,7 +13,7 @@ class Product extends Model
     protected $fillable = [ 'name', 'price', 'image', 'description', ];
 
     /**
-     * Delete the old image when image is updated
+     * Delete the image associated with product
      * 
      */
 
